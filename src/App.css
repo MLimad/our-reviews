@@ -1,38 +1,117 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color: #F5EDDC;
+}
+.container{
+  margin: auto;
+  width: 900px;
+}
+
+header h1 {
+	text-align: center;
+  padding: 60px 0 12px;
+  color: #1b1b1b;
+}
+
+header .underline {
+	width: 112px;
+	height: 6px;
+	background-color: cornflowerblue;
+	margin: auto;
+	border-radius: 30px;
+}
+
+article {
+  position: relative;
+	width: 500px;
+  min-height: 315px;
+	background-color: white;
+	padding: 30px;
+	margin: 50px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+.quote {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #6495ED;
+	border-radius: 50%;
+	top: 35px;
+	left: 193px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-img {
+	width: 120px;
+	height: 120px;
+	background-color: cornflowerblue;
+	border-radius: 50%;
+	margin: auto;
+  overflow: hidden;
+  box-shadow: 5px -1px 0px 2px #6495ED;  
+}
+
+.box-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-person {
+	margin: 14px auto;
+	text-align: center;
+}
+
+.info-person h1{
+  color: #690814;
+  text-transform: capitalize;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+
+.info-person .job {
+	margin: 5px auto;
+	background-color: cornflowerblue;
+	color: white;
+	width: 170px;
+	border-radius: 11px;
+	padding: 2px;
+}
+
+.desc p{
+  line-height: 1.5;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-review {
+	margin: 20px auto;
+	width: 100px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-right,
+.btn-left {
+	width: 25px;
+	height: 25px;
+	background: cornflowerblue;
+	border: none;
+	outline: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 1.3em;
+  line-height: 1.5;
+  margin: 5px;
+  cursor: pointer;
 }
